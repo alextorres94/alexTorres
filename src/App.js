@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <main>
+    		<div className="intro">
+          <h1>
+            Hello, I'm Alex Torres
+            <span role="img" aria-label="wave"> 👋 </span>
+          </h1>
+        </div>
+        <p className="tagline">Lifelong Learner | Clean Coder | Team Player</p>
+        <div className="icons-social">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/alextorres94" aria-label="github link">
+          <i className="fab fa-github"></i>
         </a>
-      </header>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/atorreserades" aria-label="twitter link">
+          <i className="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alextorreserades" aria-label="linkedin link">
+          <i className="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </main>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
